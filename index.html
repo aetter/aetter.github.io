@@ -1,0 +1,62 @@
+---
+layout: home
+---
+
+<h2>Blog</h2>
+
+<div class="post-list">
+  {% for post in paginator.posts %}
+  <div class="post-list-item">
+    <h3>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+    <p>{{ post.date | date_to_string }}</p>
+    <p class="post-description">{{ post.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="btn">Newer</a>
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="btn">Older</a>
+  {% endif %}
+</div>
+
+<hr />
+
+<h2>Search</h2>
+
+<p>You can search the blog. Consider this feature a permanent beta. &#9786;</p>
+
+<div><input placeholder="Search" id="search" autocomplete="off"></div>
+<div id="results"></div>
+<p id="noresults">No results. Try another search term.</p>
+
+<hr />
+
+<h2>Presentations</h2>
+{% if site.author.linkedin %}
+<p>For speaking opportunities or just to connect, contact me on <a href="{{ site.author.linkedin }}">LinkedIn</a>.</p>
+{% endif %}
+<p>
+   <a target="_blank" href="https://www.meetup.com/Write-the-Docs-SF/events/253986122/">Write the Docs South Bay</a> &mdash; 27 Sep 2018<br />
+   <a target="_blank" href="https://www.meetup.com/stc-sf/events/250161416/">STC San Francisco</a> &mdash; 16 May 2018<br />
+   <a target="_blank" href="https://youtu.be/yfoZF4tVVg8">STC Silicon Valley</a> &mdash; 19 Mar 2018<br />
+   <a target="_blank" href="https://www.eventbrite.com/e/webinar-modern-technical-writing-an-introduction-to-software-documentation-tickets-42114566803#">STC Dallas</a> &mdash; 24 Jan 2018<br />
+   <a target="_blank" href="https://www.stitcher.com/podcast/10minute-tech-comm/e/52983608">10-Minute Tech Comm</a> &mdash; 21 Jan 2018<br />
+   <a target="_blank" href="https://youtu.be/NmyvIB7zL8o">STC Silicon Valley</a> &mdash; 23 Jan 2017<br />
+   <a target="_blank" href="https://youtu.be/hbl2pgWJquE">Write the Docs San Francisco</a> &mdash; 17 Nov 2016<br />
+</p>
+
+<hr />
+
+<h2>About</h2>
+<p>I use lightweight markup and static site generators to create easy-to-maintain software documentation. Tools I like: <a href="http://commonmark.org/">Markdown</a>, <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">reStructuredText</a>, <a href="http://asciidoc.org/">AsciiDoc</a>, <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://sphinx-doc.org/">Sphinx</a>, <a href="http://gohugo.io/">Hugo</a>, <a href="https://sass-lang.com/">Sass</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a>, <a href="https://www.python.org/">Python</a>, <a href="http://lunrjs.com/">Lunr</a>, <a href="https://github.com/elastic/elasticsearch">Elasticsearch</a>, and <a href="http://www.git-scm.com/">Git</a>.</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+<script src="/scripts/documents.js"></script>
+<script src="/scripts/search.js"></script>
