@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    padding: 2rem 1rem;
+    padding: 1rem;
     color: $font-color;
     text-align: center;
     background-color: $background-color;
@@ -214,8 +214,8 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 
 .container {
     max-width: 38rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-left: auto;
     margin-right: auto;
 }
