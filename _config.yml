@@ -6,7 +6,7 @@ kramdown:
 permalink: pretty
 
 title: Andrew Etter
-description: I manage a developer documentation team at <a href="https://google.com.com/">Google</a> and am the bestselling author of <a href="https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Modern Technical Writing</a>.
+description: I manage a developer documentation team at <a href="https://google.com/">Google</a> and am the bestselling author of <a href="https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Modern Technical Writing</a>.
 url: http://andyetter.com
 disclaimer: All views are my own and do not reflect those of my employer.
 
