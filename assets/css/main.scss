@@ -53,9 +53,6 @@ body {
     html {
         font-size: 20px;
     }
-    .post-list {
-        padding: 0 2rem;
-    }
 }
 
 a {
@@ -220,91 +217,6 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     margin-right: auto;
 }
 
-.page,
-.post,
-.post-list-item {
-    margin-bottom: 3rem;
-}
-
-.page-title,
-.post-title,
-.post-title a {
-    color: white;
-}
-
-.page-title,
-.post-title {
-    margin-top: 0;
-}
-
-.post-date {
-    display: block;
-    margin-top: -.5rem;
-    margin-bottom: 1rem;
-    color: #9a9a9a;
-}
-
-.post-list {
-    text-align: center;
-    // padding: 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: visible;
-}
-
-.post-list-item {
-    padding: 0 1rem;
-    flex: 0 0 50%;
-    min-width: 10rem;
-}
-
-.post-content {
-  text-align: left;
-}
-
-.pagination {
-    overflow: hidden;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    font-family: $sans-serif-fonts;
-    color: #ccc;
-    text-align: center;
-}
-
-.pagination-item {
-    display: block;
-    padding: 1rem;
-    border: 1px solid #eee;
-}
-.pagination-item:first-child {
-    margin-bottom: -1px;
-}
-
-a.pagination-item:hover {
-    background-color: #f5f5f5;
-}
-
-@media (min-width: 30rem) {
-    .pagination {
-        margin: 0 0 3rem 0;
-    }
-    .pagination-item {
-        float: left;
-        width: 50%;
-    }
-    .pagination-item:first-child {
-        margin-bottom: 0;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-    }
-    .pagination-item:last-child {
-        margin-left: -1px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-    }
-}
-
 // Buttons
 
 .btn {
@@ -319,29 +231,6 @@ a.pagination-item:hover {
     color: $background-color;
     background-color: $accent-color;
     border-color: $accent-color;
-}
-
-// Search
-
-#search {
-    display: inline-block;
-    padding: .25rem 1rem;
-    color: $accent-color;
-    border: .1rem solid $accent-gray;
-    border-radius: .1rem;
-    background-color: $background-color;
-    color: white;
-    margin-bottom: 1rem;
-    width: 10rem;
-    font-size: 0.8rem;
-    font-family: "PT Serif", Georgia, "Times New Roman", serif;
-}
-
-#results {
-
-}
-#noresults {
-    display: none;
 }
 
 // Home page header
@@ -359,7 +248,7 @@ a.pagination-item:hover {
     font-weight: 300;
 }
 
-.header-lead, .post-description {
+.header-lead {
     margin-bottom: 0;
 }
 
